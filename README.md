@@ -1,5 +1,5 @@
 # Abstract Interpretation Lab
-[demo](https://josherich.github.io/abstract-interpretation-lab/)
+[demo](https://josherich.github.io/abstract-interpretation-lab/dist)
 
 a few demos showing various abstract interpreter, using bucklescript
 
