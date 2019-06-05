@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started</title>
+    <style>
+      html {
+        font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      #code {
+        font-size: 1.2em;
+        display: block;
+        width: 80%;
+        padding: 10px;
+        margin: 30px auto;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+      }
+      #output {
+        white-space: pre;
+        display: block;
+        width: 80%;
+        padding: 10px;
+        margin: 30px auto;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea name="" id="code" cols="30" rows="10"></textarea>
+    <div><code id="output"></code></div>
+    <script src="./main.js"></script>
+    <script type="text/javascript">
+      document.querySelector('#code').value = `x=0;
+while (x<1)
+{
+  x=1;
+  x=3;
+}`;
+      let output = document.querySelector('#output')
+      output.textContent = window.run(document.querySelector('#code').value)
+
+      document.querySelector('#code').addEventListener('change', function(e) {
+        let output = document.querySelector('#output')
+        output.textContent = window.run(document.querySelector('#code').value)
+      })
+    </script>
+  </body>
+</html>

@@ -21,3 +21,9 @@ setup.log
 
 # Merlin configuring file for Vim and Emacs
 .merlin
+.DS_Store
+.vscode
+.bsb.lock
+npm-debug.log
+/lib/bs/
+/node_modules/
